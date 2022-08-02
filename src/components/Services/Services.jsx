@@ -32,6 +32,11 @@ const serviceData=[
     img:cavity,
 
 },
+{
+  name:'Cavity Filling',
+  img:cavity,
+
+}
 ]
 
 const Services = () => {
