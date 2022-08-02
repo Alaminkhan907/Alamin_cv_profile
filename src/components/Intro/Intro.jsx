@@ -1,20 +1,12 @@
 import React, { useContext } from "react";
 import "./Intro.css";
 import "./index.css";
-import "./index.js";
-import Vector1 from "../../img/Vector1.png";
-import Vector2 from "../../img/Vector2.png";
+import "./index";
 import boy from "../../img/boy.png";
-import glassesimoji from "../../img/glassesimoji.png";
-import thumbup from "../../img/thumbup.png";
-import crown from "../../img/crown.png";
-import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
-import { motion } from "framer-motion";
-import { Link } from "react-scroll";
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -22,7 +14,7 @@ const Intro = () => {
   // context
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-
+  <script src="index.js"></script>
   return (
     <div className="Intro container" id="Intro">
       {/* left name side */}
@@ -45,9 +37,9 @@ const Intro = () => {
         </div>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/Alaminkhan907"><img src={Github} alt="" /></a>
+          <a href="https://www.linkedin.com/in/alamin-khan-907/"><img src={LinkedIn} alt="" /></a>
+          <a href="https://www.instagram.com/dreary_alo/"><img src={Instagram} alt="" /></a>
         </div>
       </div>
       {/* right image side */}
@@ -56,6 +48,7 @@ const Intro = () => {
         {/* animation */}
       </div>
     </div>
+    
   );
 };
 
