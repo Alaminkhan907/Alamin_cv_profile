@@ -30,18 +30,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-form" id="contact">
-      {/* left side copy and paste from work section */}
-      <div className="w-left">
-        <div className="awesome">
-          {/* darkMode */}
-          <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
-          <span>Contact me</span>
-          <div
-            className="blur s-blur1"
-            style={{ background: "#ABF1FF94" }}
-          ></div>
-        </div>
+    <div className="mb-5">
+      <div className="portfolio  mt-4">
+        {/* heading */}
+      <span style={{color: darkMode?'white': ''}}>Get in touch</span>
+      <span>Contract me</span>
       </div>
       {/* right side form */}
       <div className="c-right">
@@ -58,6 +51,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
+    
   );
 };
 

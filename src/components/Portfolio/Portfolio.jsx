@@ -40,14 +40,14 @@ const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div  >
+    <div>
       <div className="portfolio  ">
         {/* heading */}
       <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
       <span>Portfolio</span>
       </div>
       <div className="d-flex justify-content-center img">
-        <div className=" w-75 row mt-5 pt-0">
+        <div className=" w-80 row mt-2 pt-1">
             {
                 portfolioData.map(portfolio => <PortfolioDetails portfolio={portfolio}></PortfolioDetails>)
             }
