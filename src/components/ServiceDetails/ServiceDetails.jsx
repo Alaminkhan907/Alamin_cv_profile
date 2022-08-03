@@ -11,7 +11,7 @@ const ServiceDetails = ({service}) => {
       <img style={{height: '70px'}} src={service.img} alt=""/>
       <h5 className="mt-4 mb-4 name">{service.name}</h5>
       <p style={{ color: darkMode ? "white" : "" }}className="description">{service.description}</p>
-      <p className="benefits">Business Benefits -{service.benefit}</p>
+     {/* <p className="benefits">Business Benefits -{service.benefit}</p> */}
 
     </div>
   )
