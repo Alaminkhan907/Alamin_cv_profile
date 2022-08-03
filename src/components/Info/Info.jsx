@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import './Info.css';
 import photo from '../../img/alamin.svg'
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";

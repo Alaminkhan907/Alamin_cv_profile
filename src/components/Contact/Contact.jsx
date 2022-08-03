@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="mb-5">
+    <div className="mb-5" id="contact">
       <div className="portfolio  mt-4">
         {/* heading */}
       <span style={{color: darkMode?'white': ''}}>Get in touch</span>

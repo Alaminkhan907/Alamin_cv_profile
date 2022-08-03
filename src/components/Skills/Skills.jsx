@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./Skills.css";
 import { themeContext } from "../../Context";
-import app from '../../img/app.png';
+import app from '../../img/settings.png';
 import database from '../../img/database.png';
-import web from '../../img/web.png';
+import web from '../../img/front.png';
 
 
 const Skills = () => {
@@ -17,7 +17,7 @@ const Skills = () => {
     type: "spring",
   };
   return (
-    <div className="services mt-5" id="services">
+    <div className="services mt-5" id="skills">
       {/* left side */}
       <div className="portfolio">
         {/* heading */}
