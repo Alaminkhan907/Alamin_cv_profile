@@ -10,6 +10,7 @@ import { useContext } from "react";
 import { themeContext } from "./Context";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Skills from "./components/Skills/Skills";
+import Info from "./components/Info/Info";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -22,7 +23,7 @@ function App() {
       }}
     >
       <Navbar />
-      <Intro />
+      <Info/>
       <Services />
       <Experience />
       <Portfolio />

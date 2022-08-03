@@ -63,7 +63,7 @@ const Services = () => {
   };
 
   return (
-    <div className="services" id="services">
+    <div className="services mt-3" id="services">
       {/* left side */}
       <div className="portfolio  ">
         {/* heading */}
@@ -72,7 +72,7 @@ const Services = () => {
       </div>
       {/* right */}
       
-      <div className="d-flex justify-content-center">
+      <div  className="d-flex justify-content-center">
         <div className="w-75 row mt-2 mb-2 pt-5">
             {
                 serviceData.map(service => <ServiceDetails service={service}></ServiceDetails>)

@@ -46,7 +46,7 @@ const Portfolio = () => {
       <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
       <span>Portfolio</span>
       </div>
-      <div className="d-flex justify-content-center img">
+      <div className="d-flex justify-content-center img container">
         <div className=" w-80 row mt-2 pt-1">
             {
                 portfolioData.map(portfolio => <PortfolioDetails portfolio={portfolio}></PortfolioDetails>)
