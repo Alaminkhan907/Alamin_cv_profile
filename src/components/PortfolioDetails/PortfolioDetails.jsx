@@ -1,28 +1,58 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 
-const PortfolioDetails = ({portfolio}) => {
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
+Modal.setAppElement('#root');
+
+const PortfolioDetails = ({ portfolio }) => {
+  const { img, name, details,frontend,backend ,others, link1, link2, link3 } = portfolio;
+  const [modalIsOpen, setIsOpen] = useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   return (
-   <div className="col-md-4 text-center mt-4">
-      <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      <img src={portfolio.img} className="img-responsive img-rounded" alt='' width="100%" height="100%" />
-      </a>
-      <div className="modal fade" id="exampleModal" tabindex="-1" >
-        <div className="modal-dialog modal-dialog-centered ">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title text-center" id="exampleModalLabel">Image heading</h5>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div className="modal-body">
-              <img src={portfolio.img} alt="" width="80%" height="80%"/>
-              <p>This section describe the photo about what is going on there and son on</p>
-              <p> click this link</p>
-            </div>
+    <div className="col-md-4 text-center mt-4">
+      <img onClick={openModal} src={img} className="img-responsive img-rounded" alt='' width="100%" height="100%" />
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-header">
+            <h5 class=" text-center" id="exampleModalLabel">{name}</h5>
+
+          </div>
+          <div class="modal-body">
+            <img className="img-fluid" src={img} alt={name} />
+            <p>{details}</p>
+            <p>{frontend}</p>
+            <p>{backend}</p>
+            <p>{others}</p>
           </div>
         </div>
-      </div>
-  </div> 
+        <div>
+        <a type='button' className='btn btn-primary' href={link1} target="_blank" >Client</a>
+        <a type='button' className='btn btn-primary' href={link1} target="_blank" >Server</a>
+        <a type='button' className='btn btn-primary' href={link1} target="_blank" >Live</a>
+        </div>
+      </Modal>
+    </div>
   )
-}
+};
 
-export default PortfolioDetails
+export default PortfolioDetails;
