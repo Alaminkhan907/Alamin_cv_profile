@@ -14,7 +14,7 @@ const customStyles = {
 Modal.setAppElement('#root');
 
 const PortfolioDetails = ({ portfolio }) => {
-  const { img, name, details,frontend,backend ,others, link1, link2, link3 } = portfolio;
+  const { img, name, details, frontend, backend, others, link1, link2, link3 } = portfolio;
   const [modalIsOpen, setIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
@@ -46,9 +46,9 @@ const PortfolioDetails = ({ portfolio }) => {
           </div>
         </div>
         <div>
-        <a type='button' className='btn btn-primary' href={link1} target="_blank" >Client</a>
-        <a type='button' className='btn btn-primary' href={link1} target="_blank" >Server</a>
-        <a type='button' className='btn btn-primary' href={link1} target="_blank" >Live</a>
+          <a type='button' className='btn btn-primary' href={link1} target="_blank" >Client</a>
+          <a type='button' className='btn btn-primary' href={link2} target="_blank" >Server</a>
+          <a type='button' className='btn btn-primary' href={link3} target="_blank" >Live</a>
         </div>
       </Modal>
     </div>

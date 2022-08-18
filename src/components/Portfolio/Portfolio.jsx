@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import "./Portfolio.css";
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
+import car from "../../img/Car.png";
+import doctor from "../../img/doctor.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
 import { themeContext } from "../../Context";
@@ -11,34 +11,26 @@ import PortfolioDetails from "../PortfolioDetails/PortfolioDetails";
 
 const portfolioData = [
   {
-    img: Sidebar,
-    name: 'Sidebar',
+    img: car,
+    name: 'Car Service',
     details: 'Technology uses for this project is frontend - react , css, html , bootstrap and backend - mongodb , expressJs , cors , middleware to make this site live heroku and firebase used for login and make secure and simple website security',
-    frontend:'Front-end Technology :',
-    backend:'Back-end Technology :',
-    others:'Others Technology',
-    link1: 'https://google.com',
+    frontend:'Front-end Technology :HTML , CSS , BOOTSTRAP , REACT_JS ',
+    backend:'Back-end Technology : NodeJs ,MongoDB ,ExpressJs , Cors ,Firebase ,Heroku',
+    link1: 'https://github.com/Alaminkhan907/car-service',
+    link2: 'https://github.com/Alaminkhan907/car_service_server',
+    link3: 'https://genius-car-service-cee48.web.app/',
+  },
+  {
+    img: doctor,
+    name: "Dental doctor's service",
+    details: 'This website allow patents to take appointments online.Showing available service and closest date to take appointment.Users are secure to login and personal data ans login protected by different technology.',
+    frontend:'Front-end Technology :HTML , CSS , BOOTSTRAP , REACT_JS ',
+    backend:'Back-end Technology : NodeJs ,MongoDB ,ExpressJs , Cors ,Firebase',
+    link1: 'https://github.com/Alaminkhan907/Dental_Service_project',
     link2: '',
     link3: '',
-  },
-  {
-    img: Ecommerce,
-    name: 'E-commerce',
-    details: 'Node ,js , React',
-    link: ''
-  },
-  {
-    img: MusicApp,
-    name: 'Music app',
-    details: 'API , react , NodeJs',
-    link: ''
-  },
-  {
-    img: HOC,
-    name: 'HOC',
-    details: '',
-    link: ''
   }
+  
 ]
 
 const Portfolio = () => {
