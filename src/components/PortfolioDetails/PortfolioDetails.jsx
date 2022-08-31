@@ -45,10 +45,10 @@ const PortfolioDetails = ({ portfolio }) => {
             <p>{others}</p>
           </div>
         </div>
-        <div>
-          <a type='button' className='btn btn-primary' href={link1} target="_blank" >Client</a>
-          <a type='button' className='btn btn-primary' href={link2} target="_blank" >Server</a>
-          <a type='button' className='btn btn-primary' href={link3} target="_blank" >Live</a>
+        <div className="text-center mt-4 d-flex flex-row justify-content-around">
+          <div><a target="_blank" type='button' className='button n-button text-decoration-none' href={link1} target="_blank" >Client</a></div>
+          <div><a target="_blank" type='button' className='button n-button text-decoration-none' href={link2} target="_blank" >Server</a></div>
+          <div><a target="_blank" type='button' className='button n-button text-decoration-none' href={link3} target="_blank" >Live</a></div>
         </div>
       </Modal>
     </div>
