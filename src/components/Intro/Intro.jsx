@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import "./index.css";
 import "./index";
-import boy from "../../img/boy.png";
+import table from "../../img/table.svg";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
@@ -50,7 +50,7 @@ const Intro = () => {
       </div>
       {/* right image side */}
       <div className="i-right">
-        <img src="https://ibb.co/WgNZpRq" alt="" />
+        <img src={table} alt="" />
         {/* animation */}
       </div>
     </div>

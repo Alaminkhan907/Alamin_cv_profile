@@ -42,7 +42,11 @@
 .n-button {
   flex: 2;
 }
-
+@media screen and (max-width: 900px) {
+  .n-list {
+    display: none;
+  }
+}
 @media screen and (max-width: 480px) {
   .n-list {
     display: none;
