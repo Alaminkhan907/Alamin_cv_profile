@@ -8,11 +8,14 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
 import { themeContext } from "./Context";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Skills from "./components/Skills/Skills";
 import Info from "./components/Info/Info";
-import { ToastContainer} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Servicess from "./components/Check/Servicess";
+import Project from "./components/projects/Project";
+import Experiences from "./components/experience check/Experiences";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -25,11 +28,11 @@ function App() {
       }}
     >
       <Navbar />
-      <Info/>
-      <Services />
+      <Info />
+      <Servicess />
+      <Project />
       <Experience />
-      <Portfolio />
-      <Skills/>
+      <Experiences />
       <Contact />
       <Footer />
       <ToastContainer />

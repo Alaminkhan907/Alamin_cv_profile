@@ -1,12 +1,38 @@
-.name{
-    font-size: 1.4em;
-    color:#3DBE29;
+.name {
+  font-size: 1.4em;
+  color: #3dbe29;
 }
-.description{
-    font-size: 0.9em;
-    color:black;
+.description {
+  font-size: 0.9em;
+  color: black;
 }
-.benefits{
-    font-size: 1em;
-    color: #788097;
+.benefits {
+  font-size: 1em;
+  color: #788097;
+}
+/* Grid System */
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.33333333333333%;
+}
+.services__box {
+  padding: 40px;
+  background: #cecfdb;
+  color: #fff;
+  margin: 20px 20px;
+  transition: all 0.5s linear;
+}
+.services__box:hover {
+  background: #ff4a57;
+}
+.bgMain {
+  background: #0b27de;
 }

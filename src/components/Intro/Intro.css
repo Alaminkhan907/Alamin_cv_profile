@@ -2,6 +2,10 @@
   display: flex;
   height: 77vh;
   margin-top: 6rem;
+  background-image: url("../../img/mesh.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* left side styling */
@@ -62,7 +66,6 @@
   left: 58%;
 }
 
-
 @media screen and (max-width: 480px) {
   .Intro {
     flex-direction: column;
@@ -77,8 +80,8 @@
   .i-right .blur {
     display: none;
   }
-  .floating-div:nth-of-type(1){
+  .floating-div:nth-of-type(1) {
     /* display: none; */
-    top: -7rem !important;;
+    top: -7rem !important;
   }
 }

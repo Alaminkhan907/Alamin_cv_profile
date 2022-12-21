@@ -1,9 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: #eee;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 300%;
+}
+
+section {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 480px) {
-    .img-fluid{
-      max-width: 80%;
-      overflow: hidden;
-    }
-  .i-icons{
-    margin-top: 0;
-    }
+  .img-fluid {
+    max-width: 95%;
+    overflow: hidden;
   }
+  .i-icons {
+    margin-top: 0;
+  }
+}

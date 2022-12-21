@@ -1,0 +1,122 @@
+#experience {
+  height: max-content;
+}
+#experience-header {
+  text-align: center;
+}
+
+.container-experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.container-experience > div {
+  background: var(--color-bg-variant);
+  padding: 3rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.container-experience > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.container-experience > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary-variant);
+}
+
+.containt-experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.html-icon {
+  color: orangered;
+}
+
+.react-icon {
+  color: skyblue;
+}
+
+.boot-icon {
+  color: purple;
+  background: black;
+  border-radius: 13px;
+}
+
+.css-icon {
+  color: skyblue;
+}
+
+.java-icon {
+  border-radius: 3px;
+  color: black;
+  background: orangered;
+}
+
+.node-icon {
+  border-radius: 3px;
+  color: black;
+  background: rgb(95, 95, 204);
+  padding: 2px;
+}
+
+.mongo-icon {
+  border-radius: 3px;
+  color: skyblue;
+}
+
+.js-icon {
+  border-radius: 3px;
+  color: black;
+  background: orangered;
+}
+
+.star {
+  background: var(--color-bg-variant);
+  color: yellow;
+  margin: 3px;
+}
+
+.logo-name {
+  text-align: center;
+}
+
+.starb {
+  background: var(--color-bg-variant);
+  margin: 3px;
+}
+.experience-details {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-experience {
+    grid-template-columns: 1fr;
+  }
+  #experience {
+    margin-top: 11rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-experience {
+    margin: 0% !important;
+    justify-content: center;
+  }
+  .containt-experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+}

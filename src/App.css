@@ -1,46 +1,44 @@
-:root
-{
-  --yellow: #66AD47;
-    --orange : #1B98F5;
-    --black : #0D0D0D;
-    --gray : #788097;
-    --blueCard : #DDF8FE;
-    --purple: rgb(238 210 255);
-    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
-    --orangeCard: rgba(252, 166, 31, 0.45);
-    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
-    --bg:rgb(249,246,224);
+:root {
+  --yellow: #66ad47;
+  --orange: #1b98f5;
+  --black: #0d0d0d;
+  --gray: #788097;
+  --blueCard: #ddf8fe;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --bg: rgb(249, 246, 224);
 }
 
-.App{
-    padding: 0.5rem 3.5rem;
-    overflow: hidden;
-    color: var(--black);    
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--black);
+  background-image: url("../src/img/haikei1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .button {
-    background: linear-gradient(180deg, #538FFB 26.71%, #5B54FA 99.36%);
-    box-shadow: 0px 20px 24px 3px #bfbdce;
-    border-radius: 34px;
-    border: none;
-    color: white;
-    font-size: 16px;
-    padding: 11px 26px 11px 26px;
-  }
-  
-  .button:hover {
-    background: white;
-    cursor: pointer;
-    border: 1px solid var(--orange);
-    color: var(--orange);
-  }
-  @media screen and (max-width: 480px) {
-    .App {
-      padding: 0.5rem 1rem;
+  background: linear-gradient(180deg, #538ffb 26.71%, #5b54fa 99.36%);
+  box-shadow: 0px 20px 24px 3px #bfbdce;
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+}
 
-    }
+.button:hover {
+  background: white;
+  cursor: pointer;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+}
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 0.5rem;
   }
-
-  
-
-  
+}
