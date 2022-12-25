@@ -9,7 +9,7 @@ const About = () => {
           <img className="left-photo" src={photo} alt="" />
         </div>
         <div className="right-side">
-          <h4>MD AL AMIN KHAN</h4>
+          <h3>MD AL AMIN KHAN</h3>
           <h6>Full stack MERN developer</h6>
           <small>
             I am passionate about solving problems through with desire for

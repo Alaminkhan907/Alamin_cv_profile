@@ -15,6 +15,7 @@ import Servicess from "./components/Check/Servicess";
 import Project from "./components/projects/Project";
 import Experiences from "./components/experience check/Experiences";
 import About from "./components/About/About";
+import Blog from "./components/Blog/Blog";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
