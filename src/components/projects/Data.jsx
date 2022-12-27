@@ -1,43 +1,27 @@
 import pic1 from "../../img/Car.png";
 import pic2 from "../../img/doctor.png";
-import pic3 from "../../img/ecommerce.png";
-import pic4 from "../../img/hoc.png";
-import pic5 from "../../img/boy.png";
+import pic3 from "../../img/shop.png";
 
 export const data = [
   {
     id: 1,
     img: pic1,
     tittle: "Car Repair service",
-    github: "https://github.com/Mohangupta495/foddies",
-    demo: "https://mohangupta495.github.io/foddies/",
+    github: "https://github.com/Alaminkhan907/car-service",
+    demo: "https://genius-car-service-cee48.web.app/",
   },
   {
     id: 2,
     img: pic2,
-    tittle: "Dental doctor booking service",
-    github: "https://github.com/Mohangupta495/portfolio",
-    demo: "https://mohangupta495.github.io/portfolio/",
+    tittle: "Dental booking service",
+    github: "https://github.com/Alaminkhan907/Dental_Service_project",
+    demo: "https://doctor.maitea.shop/",
   },
   {
     id: 3,
     img: pic3,
-    tittle: "Login, SignUp and Forget Password pages",
-    github: "https://github.com/Mohangupta495/login",
-    demo: "https://mohangupta495.github.io/login/",
-  },
-  {
-    id: 4,
-    img: pic4,
-    tittle: "Flipkart Cart Page for mobile Screen",
-    github: "https://github.com/Mohangupta495/flipkartcart",
-    demo: "https://mohangupta495.github.io/flipkartcart/",
-  },
-  {
-    id: 5,
-    img: pic5,
-    tittle: "A fully Responsive website of an NGO",
-    github: "https://github.com/Mohangupta495/futureRecyclesfoundation",
-    demo: "https://www.futurerecyclers.co.in/",
+    tittle: "Basic shop",
+    github: "http://maitea.shop/",
+    demo: "http://maitea.shop/",
   },
 ];

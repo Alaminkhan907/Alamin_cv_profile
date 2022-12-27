@@ -15,33 +15,22 @@ const navbar = () => {
         <div className="n-list">
           <ul style={{ listStyleType: "none" }}>
             <li>
-              <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
+              <Link activeClass="active" to="Navbar">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="services" spy={true} smooth={true}>
-                About
-              </Link>
+              <Link to="about">About</Link>
             </li>
             <li>
-              <Link to="portfolio" spy={true} smooth={true}>
-                Projects
-              </Link>
+              <Link to="project">Projects</Link>
             </li>
             <li>
-              <Link to="skills" spy={true} smooth={true}>
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link to="skills" spy={true} smooth={true}>
-                Blogs
-              </Link>
+              <Link to="experience">Skills</Link>
             </li>
           </ul>
         </div>
-        <Link to="contact" spy={true} smooth={true}>
+        <Link to="contact">
           <button className="button n-button">Contact</button>
         </Link>
       </div>

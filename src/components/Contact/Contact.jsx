@@ -2,14 +2,13 @@ import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
-  const [done, setDone] = useState(false)
-
+  const [done, setDone] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,28 +25,37 @@ const Contact = () => {
           console.log(result.text);
           setDone(true);
           toast(`Email send successfully`);
-          
         },
         (error) => {
           console.log(error.text);
           toast(`${error.text} Happen`);
         }
       );
-     e.target.reset();
+    e.target.reset();
   };
 
   return (
     <div className="mb-5" id="contact">
-      <div className="portfolio  mt-4">
+      <div className="portfolio ">
         {/* heading */}
-        <span style={{ color: darkMode ? 'white' : '' }}>Get in touch</span>
-        <span>Contract me</span>
+        <span style={{ color: darkMode ? "white" : "" }}>Get in touch</span>
+        <span className="fs-4">Contract me</span>
       </div>
       {/* right side form */}
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user" placeholder="Name" />
-          <input type="email" name="user_email" className="user" placeholder="Email" />
+          <input
+            type="text"
+            name="user_name"
+            className="user"
+            placeholder="Name"
+          />
+          <input
+            type="email"
+            name="user_email"
+            className="user"
+            placeholder="Email"
+          />
           <textarea name="message" className="user" placeholder="Message" />
           <input type="submit" value="Send" className="button" />
           <span>{done && "Thanks for Contacting me"}</span>
@@ -58,7 +66,6 @@ const Contact = () => {
         </form>
       </div>
     </div>
-
   );
 };
 

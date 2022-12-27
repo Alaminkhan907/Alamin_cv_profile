@@ -62,7 +62,7 @@ section {
   cursor: pointer;
 }
 .img-fluid {
-  max-width: 95%;
+  max-width: 90%;
   overflow: hidden;
 }
 

@@ -3,7 +3,7 @@ import "./About.css";
 import photo from "../../img/personal-profile.svg";
 const About = () => {
   return (
-    <div className="first">
+    <div className="first" id="about">
       <div className="container-about">
         <div className="left-side">
           <img className="left-photo" src={photo} alt="" />

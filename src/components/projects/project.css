@@ -12,7 +12,7 @@
 }
 
 .portfolio-item {
-  background: #2fd3d5;
+  background: #dbf5f0;
   padding: 1.3rem;
   border-radius: 1rem;
   border: 1px solid transparent;
@@ -21,7 +21,7 @@
 }
 
 .portfolio-item:hover {
-  border-color: #57a8da;
+  border-color: black;
   background: transparent;
 }
 
@@ -73,7 +73,7 @@
     justify-content: center;
   }
   .portfolio-item {
-    background: #2fd3d5;
+    background: none;
     padding: 0.5rem;
     border-radius: 0.7rem;
     border: 1px solid transparent;

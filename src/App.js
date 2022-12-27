@@ -1,7 +1,5 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-
-import Services from "./components/Services/Services";
 import Experience from "./components/Experience/Experience";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -11,11 +9,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Info from "./components/Info/Info";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Servicess from "./components/Check/Servicess";
 import Project from "./components/projects/Project";
 import Experiences from "./components/experience check/Experiences";
 import About from "./components/About/About";
-import Blog from "./components/Blog/Blog";
+
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;

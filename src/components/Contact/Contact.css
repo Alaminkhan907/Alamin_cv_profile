@@ -1,79 +1,59 @@
-.contact-form{
-    padding: 0 3rem 0 3rem;
-    display: flex;
-    height: 80vh;
-    margin-top: 4rem;
-      /* scroll */
+.contact-form {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 80vh;
+  margin-top: 4rem;
+  /* scroll */
   padding-top: 3rem;
 }
-
-.c-right{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    flex: 1;
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.c-right>form
-{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    
+.c-right {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 1;
 }
 
-.c-right .user{
-    width: 20rem;
-    height: 2rem;
-    padding: 0.3em;
-    outline: none;
-    border: 2px solid var(--orange);
-    border-radius: 8px;
-    font-size: 16px;   
+.c-right > form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
 }
 
-textarea{
-    height: 4rem!important;
+.c-right .user {
+  width: 20rem;
+  height: 2rem;
+  padding: 0.3em;
+  outline: none;
+  border: 2px solid var(--orange);
+  border-radius: 8px;
+  font-size: 16px;
 }
 
-.c-blur1{
-    top: 1rem;
-    left: 8rem;
+textarea {
+  height: 5rem !important;
 }
-.awesome {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    /* gap: 20px; */
-  }
-  
-  .awesome > :nth-child(1) {
-    color: var(--black);
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  .awesome > :nth-child(2) {
-    color: var(--orange);
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  .awesome > :nth-child(3) {
-    color: var(--gray);
-    font-size: 14px;
-    margin-top: 1rem;
-  }
 
+.c-blur1 {
+  top: 1rem;
+  left: 8rem;
+}
 
 @media screen and (max-width: 480px) {
-    .contact-form{
-        padding: 0;
-        flex-direction: column;
-        gap: 5rem;
-        height: 40rem;
-    }
-    .c-right .user{
-        width: 16rem;
-    }
-
-}   
+  .contact-form {
+    padding: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 40rem;
+  }
+  .c-right .user {
+    width: 16rem;
+  }
+}

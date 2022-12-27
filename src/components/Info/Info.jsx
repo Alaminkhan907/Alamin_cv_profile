@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import ReactTextTransition, { presets } from "react-text-transition";
 import "./info.css";
-import photo from "../../img/table.svg";
+import photo from "../../img/vue.svg";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
@@ -23,6 +23,7 @@ const para = [
   "Create Responsive WebSite",
   "Keep Secure web data",
 ];
+
 const Info = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;

@@ -19,11 +19,7 @@ const Project = () => {
                 <a href={github} className="btn" target="_blank">
                   www.github.com{" "}
                 </a>{" "}
-                <a
-                  href={demo}
-                  className="btn btn-primary sub"
-                  target={"_blank"}
-                >
+                <a href={demo} className="button n-button" target={"_blank"}>
                   {" "}
                   Live Demo{" "}
                 </a>{" "}

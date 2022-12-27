@@ -3,10 +3,10 @@
 
   background: linear-gradient(
     to right,
-    pink 0%,
-    pink 30%,
-    black 30%,
-    black 100%
+    #eef9fc 0%,
+    #eef9fc 30%,
+    #8fb6d3 30%,
+    #8fb6d3 100%
   );
 
   color: white;
@@ -62,7 +62,7 @@
   .first {
     height: auto;
     background: none;
-    color: white;
+    color: black;
     margin-top: 2em;
   }
   .left-photo {
@@ -79,8 +79,5 @@
     padding-right: 2rem;
     justify-items: center;
     font-size: 0.8rem;
-  }
-  #customers {
-    color: rebeccapurple;
   }
 }
